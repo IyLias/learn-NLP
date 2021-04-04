@@ -17,7 +17,7 @@ for i in text:
     sentence = word_tokenize(i)
     result = []
 
-    for word in sentences:
+    for word in sentence:
         word = word.lower()
         if word not in stop_words:
             if len(word) > 2:
