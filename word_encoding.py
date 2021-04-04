@@ -12,6 +12,7 @@ vocab = {}
 sentences = []
 stop_words = set(stopwords.words('english'))
 
+# for each sentence, delete stopwords and shorter than 2 letters. and count how often occurred in vocab
 for i in text:
     sentence = word_tokenize(i)
     result = []
